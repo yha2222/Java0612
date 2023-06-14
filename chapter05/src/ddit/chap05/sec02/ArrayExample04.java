@@ -4,17 +4,16 @@ import java.util.Arrays;
 
 public class ArrayExample04 {
 
-	public static void main(String[] args) {
-		//int[] arr = {120, 730, 50, 440, 290, 300, 510, 620, 29, 930};
+	public static void main(int[] args) {
+		int[] arr = {120, 730, 50, 440, 290, 300, 510, 620, 29, 930};
 		
 		////arrayMethod01(arr);
-		//int[] res = arrayMethod01(arr); //매개변수 부여로 메서드 호출
-		
+		int[] res = arrayMethod01(arr); //매개변수 부여로 메서드 호출
 		//System.out.println(Arrays.toString(arr));
 		//System.out.println(Arrays.toString(res));
 		
 		//arrayMethod02(arr);
-		arrayMethod03();
+		//arrayMethod03();
 	}
 	//arr(주는 쪽) => tar(받는 쪽) >> int[] tar = arr;
 	//배열 하나에 이름 두 개인 상황-기억장소 하나에 호출 되는 이름이 두 개
@@ -38,9 +37,10 @@ public class ArrayExample04 {
 		for(int i = 1; i < arr.length; i++) {
 			if(tmax < arr[i])	tmax = arr[i];
 			if(tmin > arr[i])	tmin = arr[i];
-		}
+		
 		System.out.println("최대값: " + tmax);
 		System.out.println("최소값: " + tmin);
+	}
 	}
 	
 	public static void arrayMethod03() {
@@ -53,5 +53,4 @@ public class ArrayExample04 {
 		name[name.length-1] = temp;
 		System.out.println(Arrays.toString(name));
 	}
-
 }

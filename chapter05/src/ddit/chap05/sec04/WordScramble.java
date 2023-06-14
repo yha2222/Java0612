@@ -7,8 +7,8 @@ public class WordScramble {
 	//초기화 자동 실행
 	String[] word = {"apple", "chestnut", "hope", "banana", "computer"};
 	
-	//호출 - void : 되돌려줄 값이 없음=>다시 돌아올 필요X
-	//              ==> =오른쪽에 있으면 진행 X(내는 값이 없으니까 멈춤)
+	//호출 - void : 되돌려줄 값이 없음 =>다시 돌아올 필요X
+	//              ==> '='오른쪽에 있으면 진행 X(내는 값이 없으니까 멈춤)
 	public void init() {
 		int count = 0;
 		String str = word[(int)(Math.random() * word.length)];

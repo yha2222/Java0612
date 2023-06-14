@@ -25,11 +25,8 @@ public class Report {
 		
 		for(int i=0; i<sco.length-1; i++) {
 			int a = sco[i];
-			if(max < a) {
-				max = a; 
-			}else if(min > a) { 
-				min = a;
-			}
+			if(max < a) max = a; 
+			if(min > a) min = a;
 		}
 		System.out.println("최대값: " + max);
 		System.out.println("최소값: " + min);
