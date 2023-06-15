@@ -41,19 +41,35 @@ public class ReportCard {
 
 	public void st() {
 		for(int i = 0; i < score.length; i++) {
+			//
 			for(int j = 0; j < score.length; j++) {
-					for(int k = 0; k < 6; k++) {
-						
+				//
+					for(int k =0; k < score.length; k++) {
+						if(score[i][5] > score[j][5]) {
+						String temp = name[i];
+						name[i] = name[j];
+						name[j] = temp;
+					}
 				}
 			}
 		}
 }
+	
+	public void test() {
+		for(int i = 0; i < score.length; i++) {
+			for(int j = 0; j < score.length; j++) {
+				System.out.print(score[j][i] + " ");
+			}
+			System.out.println();
+		}
+	}
 
 	
 	public void printReport() {
 		calculateGrade();
 		rank();
-		st();
+		//st();
+		test();
 		System.out.println("                    <<성적표>>");
 		System.out.println("이름\t국어\t영어\t수학\t총점\t평균\t등수");
 		System.out.println("====================================================");

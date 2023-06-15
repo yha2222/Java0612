@@ -3,16 +3,16 @@ package ddit.chap05.sec21;
 public class StudentExample {
 
 	public static void main(String[] args) {
-		//Student st = new Student("ÀÌ¼º°è", 24, false); 
-		//Å¬·¡½º °´Ã¼ ÁÖ¼Ò ->st => this!
+		//Student st = new Student("ï¿½Ì¼ï¿½ï¿½ï¿½", 24, false); 
+		//Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½Ö¼ï¿½ ->st => this!
 		//System.out.println(st); => ddit.chap05.sec21.Student@15db9742
 		
 //		Student st[] = new Student[28];
-//		st[0] = new Student("½É¿ì½Ä", 30, false);
-		Student[] st = {new Student("½É¿ì½Ä", 30, false),
-						new Student("ÀÌ»ó¹Î", 27, false),
-						new Student("ÀüÀ¯ºó", 25, false),
-						new Student("ÁöÀ±¼­", 26, false),
+//		st[0] = new Student("ï¿½É¿ï¿½ï¿½", 30, false);
+		Student[] st = {new Student("ï¿½É¿ï¿½ï¿½", 30, false),
+						new Student("ï¿½Ì»ï¿½ï¿½", 27, false),
+						new Student("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 25, false),
+						new Student("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 26, false),
 				};
 	}
 
